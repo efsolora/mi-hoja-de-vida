@@ -5,103 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts\style.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>Hoja de vida</title>
 </head>
 
 <body>
-    <header>
-        <h1>Hoja de vida</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Información general</h2>
-            <p><b>Nombre y Apellido:</b> Efrain Solorzano Arrieta</p>
-            <p><b>Email:</b> efsolora@gmail.com</p>
-            <p><b>Teléfono:</b> 3052428442</p>
-            <p><b>Ubicación actual:</b> Cr 51 cl 48-40 itagui, antioquia</p>
-            <p><b>GitHub:</b> <a href="https://github.com/efsolora">https://github.com/efsolora</a> </p>
-            <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/efsolora">https://www.linkedin.com/in/efsolora</a>
-            </p>
-        </section>
-        <section>
-            <h2>Experiencia</h2>
-            <ol>
-                <li>google</li>
+    <div class="flex">
+        <div id="contenedor-izquierdo">
+            <section class="fondodeimagen">
+                <img src="IMG_20220323_151033091_2.jpg  " alt="">
+            </section>
+            <section>
+                <h2>CONTACTO</h2>
                 <ul>
-                    <li>desarrodador front-end</li>
+                    <li><span class="icon-mail"> efsolora@gmail.com</span> </li>
+                    <li><span class="icon-phone"> 3016693220</span> </li>
+                    <li><span class="icon-location"> cr51 # 48 - 40, Edificio normesan-apto 402, Itagui,
+                            Antioquia</span>
+                    </li>
+                    <li><span class="icon-github"> <a href="https://github.com/efsolora">
+                                github.com/efsolora</a></span></li>
+                    <li><span class="icon-linkedin"> <a href="https://www.linkedin.com/in/efsolora">
+                                linkedin.com/in/efsolora</a></span></li>
                 </ul>
-                <li>Facebook</li>
-                <ul>
-                    <li>desarrodador back-end</li>
-                </ul>
-                <li>Microsoft</li>
-                <ul>
-                    <li>desarrodador full-stack</li>
-                </ul>
-            </ol>
-        </section>
-        <div>
-            <table border="1">
-                <tr>
-                    <th>Habilidades técnicas</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                </tr>
-                <tr>
-                    <td>Javascript</td>
-                </tr>
-                <tr>
-                    <td>Firebase</td>
-                </tr>
-                <tr>
-                    <td>React js</td>
-                </tr>
-
-            </table>
+            </section>
+            <section>
+                <h2>HABILIDADES TECNICAS</h2>
+                <div class="contenedor-habilidades">
+                    <div class="contenedor-lengujes">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React JS</li>
+                            <li>firebase</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-meter">
+                        <meter value="70" min="0" max="100" optimum="70"></meter>
+                        <meter value="100" min="0" max="100"></meter>
+                        <meter value="100" min="0" max="100"></meter>
+                        <meter value="100" min="0" max="100"></meter>
+                        <meter value="100" min="0" max="100"></meter>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>PASATIEMPOS</h2>
+                <div class="pasatiempos">
+                    <span class="icon-open-book"></span>
+                    <span class="icon-map"></span>
+                    <span class="icon-aircraft"></span>
+                    <span class="icon-radio"></span>
+                </div>
+            </section>
         </div>
 
-        <div>
-            <table border="1">
-                <tr>
-                    <th>Intereses</th>
-                </tr>
-                <tr>
-                    <td>front-end</td>
-                </tr>
-                <tr>
-                    <td>back-end</td>
-                </tr>
-                <tr>
-                    <td>Aplicaciones moviles</td>
-                </tr>
-                <tr>
-                    <td>Desarrollo de Software</td>
-                </tr>
-                <tr>
-                    <td>Base de datos</td>
-                </tr>
-                <tr>
-                    <td>Machine learning</td>
-                </tr>
+        <div id="contenedor-derecho">
+            <section>
+                <h1>EFRAIN SOLORZANO ARRIETA</h1>
+            </section>
+            <section>
+                <h2>RESUMEN</h2>
+                <p>Me desempeño como desarrollador de paginas web Front-End. soy una persona orientada al detalle,
+                    siempre
+                    buscando la satisfaccion de cliente con un producto de calidad e innovador. Me gusta trabajar en
+                    equipo
+                    y aprender de mis colaboradores en todo momento, siempre orientado al objetivo comun. </p>
+            </section>
+            <section>
+                <h2>ESTUDIOS</h2>
+                <ul>
+                    <li>2022-ADA SCHOOL: Desarrollo de paginas web Front-End </li>
+                    <li>2008-Saleciano El Sufragio: Bachillerato</li>
+                    <li>2002-Colegio De La Salle: Primaria</li>
+                </ul>
+            </section>
+            <section>
+                <h2>EXPERIENCIA</h2>
+                <ul>
+                    <li>Facebook: Desarrollador Front-End</li>
+                    <li>Google: Desarrollador Back-End</li>
+                    <li>Micrisoft: Desarrollador Full-Stack</li>
+                </ul>
+            </section>
+            <section>
+                <h2>ESCRÍBEME</h2>
+                <label>Nombre</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="email" required>
+                <ul>
+                    <label>Mensaje</label>
+                    <textarea name="" id="" cols="49" rows="5"></textarea>
+                </ul>
 
-            </table>
+            </section>
         </div>
-        <form>
-            <h2>Contacto</h2>
-            <label>Email</label>
-            <input type="email" value="ejemplo.gmail.com">
-            <label>Mensaje</label>
-            <textarea name="mensaje">Mensaje</textarea>
-            <input type="submit" value="Contactar">
-        </form>
-
-
-    </main>
-
+    </div>
 </body>
 
 </html>
